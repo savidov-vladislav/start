@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>СЭВ 2</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <!-- Pignose Calender -->
+    <link href="./plugins/pg-calendar/css/pignose.calendar.min.css" rel="stylesheet">
+    <!-- Chartist -->
+    <link rel="stylesheet" href="./plugins/chartist/css/chartist.min.css">
+    <link rel="stylesheet" href="./plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
+    <!-- Custom Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+            </svg>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+    
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <div class="brand-logo">
+                <a href="index.html">
+                    <b class="logo-abbr"><img src="images/logo.png" alt=""></b>
+                    <span class="logo-compact"><img src="./images/logo-compact.png" alt=""></span>
+                    <span class="brand-title">
+                        <img src="images/logo-text.png" alt="">
+                    </span>
+                </a>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+
+        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">    
+            <div class="header-content clearfix">
+                
+                <div class="nav-control">
+                    <div class="hamburger">
+                        <span class="toggle-icon"><i class="icon-menu"></i></span>
+                    </div>
+                </div>
+                <div class="header-left">
+                    <div class="input-group icons">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-transparent border-0 pr-2 pr-sm-3" id="basic-addon1"><i class="mdi mdi-magnify"></i></span>
+                        </div>
+                        <input type="search" class="form-control" placeholder="Search Dashboard" aria-label="Search Dashboard">
+                        <div class="drop-down animated flipInX d-md-none">
+                            <form action="#">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <ul class="clearfix">
+                        <li class="icons dropdown">
+						<div class="button-icon"><button type="button" class="btn mb-1 btn-primary">Поддержать проект <span class="btn-icon-right"><i class="fa fa-heart"></i></span></div>
+                        </li>
+                        <li class="icons dropdown"><a href="javascript:void(0)" data-toggle="dropdown">
+                                <i class="mdi mdi-bell-outline"></i>
+                                <span class="badge badge-pill gradient-2">1</span>
+                            </a>
+                            <div class="drop-down animated fadeIn dropdown-menu dropdown-notfication">
+                                <div class="dropdown-content-heading d-flex justify-content-between">
+                                    <span class="">Сообщения</span>  
+                                    <a href="javascript:void()" class="d-inline-block">
+                                        <span class="badge badge-pill gradient-2">1</span>
+                                    </a>
+                                </div>
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:void()">
+                                                <span class="mr-1 avatar-icon bg-success-lighten-1"><i class="icon-info"></i></span>
+                                                <div class="notification-content">
+                                                    <h6 class="notification-heading">Системное обновление</h6>
+                                                    <span class="notification-text">от 16.03.2023г.</span> 
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="icons dropdown">
+                            <div class="user-img c-pointer position-relative"   data-toggle="dropdown">
+                                <span class="activity active"></span>
+                                <img src="images/user/1.png" height="40" width="40" alt="">
+                            </div>
+                            <div class="drop-down dropdown-profile animated fadeIn dropdown-menu">
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <li>
+                                            <a href="app-profile.html"><i class="icon-user"></i> <span>Обо мне</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void()">
+                                                <i class="icon-envelope-open"></i> <span>Написать</span>
+                                            </a>
+                                        </li>
+                                        
+                                        <hr class="my-2">
+                                        <li>
+                                            <a href="page-lock.html"><i class="icon-money"></i> <span>Поддержать</span></a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="nk-sidebar">           
+            <div class="nk-nav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li class="nav-label">Основное меню</li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-speedometer menu-icon"></i><span class="nav-text">Главная страница</span>
+                        </a>
+
+                    </li>
+                    <li class="mega-menu mega-menu-sm">
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-globe-alt menu-icon"></i><span class="nav-text">Госпорталы</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="https://zakupki.gov.ru/epz/main/public/home.html">ЕИС Закупки</a></li>
+                            <li><a href="https://bus.gov.ru/">Реестр ГМУ</a></li>
+                            <li><a href="https://www.gosuslugi.ru/">Госуслуги</a></li>
+                            <li><a href="http://lkul.nalog.ru/">ФНС для юридических лиц</a></li>
+                            <li><a href="https://lk.fss.ru/">ФСС для юридических лиц</a></li>
+                            <li><a href="https://job.dznhmao.ru/">Портал центра занятости</a></li>                           
+                        </ul>
+                    </li>
+                    <li class="mega-menu mega-menu-sm">
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-envelope menu-icon"></i> <span class="nav-text">Электронные площадки</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="https://login.sberbank-ast.ru/Login.aspx?ReturnUrl=%2f%3fwa%3dwsignin1.0%26wtrealm%3dhttp%253a%252f%252fwww.sberbank-ast.ru%252f%26wreply%3daHR0cDovL3d3dy5zYmVyYmFuay1hc3QucnUvdHJhZGV6b25lL2RlZmF1bHQuYXNweA%253d%253d&wa=wsignin1.0&wtrealm=http%3a%2f%2fwww.sberbank-ast.ru%2f&wreply=aHR0cDovL3d3dy5zYmVyYmFuay1hc3QucnUvdHJhZGV6b25lL2RlZmF1bHQuYXNweA%3d%3d">Сбербанк-АСТ</a></li>
+                            <li><a href="https://etp.roseltorg.ru/authentication/login">Росэлторг</a></li>
+                            <li><a href="http://auth.zakazrf.ru/OAuth/Customers">Заказ РФ</a></li>
+                            <li><a href="https://www.etp-ets.ru/">ЭТП ММВБ</a></li>
+                            <li><a href="https://app.rts-tender.ru/auth/sso/login/customer?ReturnUrl=https%3A%2F%2Fapp.rts-tender.ru%2Fcustomer%2Flk%2F">Тендер РТС</a></li>
+                            <li><a href="https://ozhmao-zmo.rts-tender.ru/">Тендер РТС ХМАО</a></li>
+                            <li><a href="https://ozhmao-zmo.rts-tender.ru/">ЭМ ХМАО</a></li>
+                            <li><a href="https://lk-zakupki.admhmao.ru/login/">Государственный заказ</a></li>
+                        </ul>
+                    </li>
+                    <li class="mega-menu mega-menu-sm">
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-screen-tablet menu-icon"></i><span class="nav-text">Справочные системы</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="https://about.action360.ru/">Система Актион 360</a></li>
+                            <li><a href="https://vip.1kadry.ru/">Система кадры</a></li>
+                            <li><a href="https://vip.1obraz.ru/">Система образование</a></li>
+                            <li><a href="https://vip.gosfinansy.ru/">Система госфинансы</a></li>
+                            <li><a href="https://vip.1zavuch.ru/">Система завуч</a></li>
+                            <li><a href="https://vip.1gzakaz.ru/">Система госзаказ</a></li>
+                            <li><a href="https://vip.1otruda.ru/">Система охрана труда</a></li>
+                            <li><a href="https://vip.1gl.ru/">Система главбух</a></li>
+                        </ul>
+                    </li>
+                    <li class="mega-menu mega-menu-sm">
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-graph menu-icon"></i> <span class="nav-text">Стат.отчетность</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="http://avers.admhmao.ru/">ИАС Сводная отчетность</a></li>
+                            <li><a href="http://avers.admhmao.ru:11080/projects/mon4/">ИАС Мониторинг</a></li>
+                            <li><a href="http://monitoring.admhmao.ru:81/Account/LogOn?ReturnUrl=%2f">ИАС Паспорт образования</a></li>
+                            <li><a href="https://idp.vetrf.ru/idp/profile/SAML2/POST/SSO;jsessionid=1371shz8svmt4g9c3xwirqzr2?execution=e1s1">ИАС Меркурий</a></li>
+                            <li><a href="https://mdlp.crpt.ru/#/auth/signin?eyJlcnJvciI6MX0=">ИАС Мониторинг лек.средств</a></li>
+                            <li><a href="https://pd.rkn.gov.ru/operators-registry/notification/">ИАС Роскомнадзора</a></li>
+                            <li><a href="https://tisauth.admhmao.ru/authenticationendpoint/login.do?client_id=sjoSw2J_o6WiKogQPRugjg2hElAa&commonAuthCallerPath=%2Foauth2%2Fauthorize&forceAuth=false&nonce=XFhJ8vM-d_OlKJvgPbCA2w4LRcyFa9OyXtPOA9uG-tg&passiveAuth=false&redirect_uri=https%3A%2F%2Ftisugra.admhmao.ru%2Foidc%2Fredirect&response_type=code&scope=openid&state=zI3xAhYvr54UnFcZyPrUS7fQ9w4&tenantDomain=carbon.super&sessionDataKey=22466a79-babe-49b4-8bed-fc5464c2ce92&relyingParty=sjoSw2J_o6WiKogQPRugjg2hElAa&type=oidc&sp=tisugra&isSaaSApp=false&authenticators=BasicAuthenticator%3ALOCAL">ТИС ЮГРЫ</a></li>
+                            <li><a href="https://gasu-office.roskazna.ru/">ГАС Управление</a></li>
+                            <li><a href="https://lk-fisoko.obrnadzor.gov.ru/">ФИС ОКО</a></li>
+                            <li><a href="http://aknd.obrnadzor.gov.ru/Login.aspx">ИС АКНДПП</a></li>
+                            <li><a href="https://cabinet.miccedu.ru/">ГИВЦ ОШ1 и ОШ2</a></li>
+                        </ul>
+                    </li>
+                    <li class="mega-menu mega-menu-sm">
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-grid menu-icon"></i><span class="nav-text">Эл. документооборот</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="http://10.3.47.15/">ФИС ФРДО  VIP Net</a></li>
+                            <li><a href="http://192.168.203.2/delo/">СЭД Дело VPN</a></li>
+                            <li><a href="https://xn--q1aade.xn--p1ai/">ССТУ.РФ Откр.ч</a></li>
+                        </ul>
+                    </li>
+                    <li class="mega-menu mega-menu-sm">
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-grid menu-icon"></i><span class="nav-text">АИС и СКБ</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="https://budgetnsi.admhmao.ru/idp/saml">АИС Исполнение бюджета</a></li>
+                            <li><a href="https://budgetplan.admhmao.ru/login/">АИС Бюджет</a></li>
+                            <li><a href="http://zakupki.admhmao.ru/">АИС Закупки</a></li>
+                            <li><a href="http://5.141.28.50:10200/Login.aspx?ReturnUrl=%2f">АИС Барс</a></li>
+                            <li><a href="https://lk-zakupki.admhmao.ru/login/">ГИС Госзаказ</a></li>
+                            <li><a href="https://budgetreport.admhmao.ru/application/?auth-profile=idp">ПК НСИ</a></li>
+                            <li><a href="https://auth.kontur.ru/?authmode=certlogin&back=https%3a%2f%2fsetter.kontur.ru%2f%3fpromocode%3d1210">СКБ Контур экстерн</a></li>
+                            <li><a href="https://auth.kontur.ru/?tabs=1,1,0,1&customize=diadoc&back=https%3A%2F%2Fdiadoc.kontur.ru%2F">СКБ Контур диадок</a></li>
+                            <li><a href="https://elba.kontur.ru/AccessControl/Login?utm_source=yandex&utm_medium=organic&utm_referer=yandex.ru&utm_startpage=kontur.ru%2Fenter&utm_orderpage=kontur.ru%2Fenter">СКБ Контур эльба</a></li>
+                            <li><a href="https://budget.admsurgut.ru/AF2021/login.jsp">АЦК Финансы</a></li>
+                        </ul>
+                    </li>
+                    <li class="mega-menu mega-menu-sm">
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-note menu-icon"></i><span class="nav-text">Банки</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="https://www.sberbank.ru/ru/s_m_business/new_sbbol">ПАО Сбербанк</a></li>
+                            <li><a href="https://internetbankmb.open.ru/login">ПАО Открытие</a></li>
+                            <li><a href="https://inetbank.zapsibkombank.ru/">ПАО Запсибкомбанк</a></li>
+                            <li><a href="https://bo.vtb24.ru/login">ПАО ВТБ БО</a></li>
+                        </ul>
+                    </li>
+                    <li class="mega-menu mega-menu-sm">
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-note menu-icon"></i><span class="nav-text">Обр. платформы</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="https://cop1.admhmao.ru:8090/login">Комплектование классов</a></li>
+                            <li><a href="https://cop.admhmao.ru/authorize">Классный журнал</a></li>
+                            <li><a href="https://cop1.admhmao.ru:8081/auth/login-page">Зачисление в детский сад</a></li>
+                            <li><a href="https://hmao.pfdo.ru/app">Дополнительное образование</a></li>
+                            <li><a href="https://cop1.admhmao.ru:8082/ps-auth/esia-oauth/esia-oauth-login">Родительская плата</a></li>
+                            <li><a href="https://educont.ru/profile">Цифровой обр. контент</a></li>
+                            <li><a href="https://pos.gosuslugi.ru/admin/login">ПОС Образование Адм.</a></li>
+                            <li><a href="https://pos.gosuslugi.ru/backoffice/">ПОС Образование Исп.</a></li>
+                        </ul>
+                    </li>
+                    <li class="mega-menu mega-menu-sm">
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-note menu-icon"></i><span class="nav-text">Запись к врачу</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="https://er.dzhmao.ru/">Электронная регистратура</a></li>
+                            <li><a href="https://hosponline.ru/">Онлайн очередь</a></li>
+                        </ul>
+                    </li>
+                    <li class="mega-menu mega-menu-sm">
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-note menu-icon"></i><span class="nav-text">Оплата ЖКУ</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="https://rkc-sistema.ru/">РКЦ-Система</a></li>
+                            <li><a href="https://www.rkcsr.ru/">МУП РКЦ ЖКХ</a></li>
+                            <li><a href="https://lk.yritz.ru/plat">Югорский РИЦ</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-label">Дополнительное меню</li>
+                    <li class="mega-menu mega-menu-sm">
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-menu menu-icon"></i><span class="nav-text">Оформление ЭЦП</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="https://fzs.roskazna.ru/" aria-expanded="false">Росказна</a></li>
+                            <li><a href="https://ca.kontur.ru/" aria-expanded="false">УЦ Контур</a></li>
+                        </ul>
+                    </li>
+                    <li class="mega-menu mega-menu-sm">
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-menu menu-icon"></i><span class="nav-text">Удаленный доступ</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="https://anydesk.com/ru/downloads/windows" aria-expanded="false">Anydesk</a></li>
+                            <li><a href="https://www.aeroadmin.com/ru/" aria-expanded="false">AeroAdmin</a></li>
+                            <li><a href="https://www.teamviewer.com/ru/?utm_source=yandex&utm_medium=cpc&utm_content=teamviewer_brand&utm_campaign=ru%7Cb%7Cpr%7C19%7Cmar%7Cexact-new-sn%7Cfree%7Ct0%7C0" aria-expanded="false">Teamviewer</a></li>
+                        </ul>
+                    </li>
+                    <li class="mega-menu mega-menu-sm">
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-menu menu-icon"></i><span class="nav-text">Автоматизация</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="https://help.kontur.ru/uc" aria-expanded="false">Контур диагностика</a></li>
+                            <li><a href="https://www.dns-shop.ru/configurator" aria-expanded="false">Сборка ПК</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div> <center> Версия сайта: 8.1.0 (14.03.2023г.) </center>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+
+            <div class="container-fluid mt-3">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6"><article><a href="/">
+                        <div class="card gradient-1">
+                            <div class="card-body">
+                                <h3 class="card-title text-white">Электронная почта</h3>
+                                <div class="d-inline-block">
+                                    <h2 class="text-white">MAIL.RU</h2>
+                                    <p class="text-white mb-0"></p>
+                                </div>
+                                <span class="float-right display-5 opacity-5"><i class="fa fa-envelope"></i></span>
+                            </div>
+                        </div>
+                    </div></a></article>
+                    <div class="col-lg-3 col-sm-6"><article><a href="/">
+                        <div class="card gradient-2">
+                            <div class="card-body">
+                                <h3 class="card-title text-white">Классный журнал</h3>
+                                <div class="d-inline-block">
+                                    <h2 class="text-white">ЦОП ХМАО-Югры</h2>
+                                    <p class="text-white mb-0"></p>
+                                </div>
+                                <span class="float-right display-5 opacity-5"><i class="fa fa-users"></i></span>
+                            </div>
+                        </div>
+                    </div></a></article>
+                    <div class="col-lg-3 col-sm-6"><article><a href="/">
+                        <div class="card gradient-3">
+                            <div class="card-body">
+                                <h3 class="card-title text-white">Зачисление в детский сад</h3>
+                                <div class="d-inline-block">
+                                    <h2 class="text-white">ЦОП ХМАО-Югры</h2>
+                                    <p class="text-white mb-0"></p>
+                                </div>
+                                <span class="float-right display-5 opacity-5"><i class="fa fa-users"></i></span>
+                            </div>
+                        </div>
+                    </div></a></article>
+                    <div class="col-lg-3 col-sm-6"><article><a href="/">
+                        <div class="card gradient-4">
+                            <div class="card-body">
+                                <h3 class="card-title text-white">Дополнительное образование</h3>
+                                <div class="d-inline-block">
+                                    <h2 class="text-white">ПФДО</h2>
+                                    <p class="text-white mb-0">https://hmao.pfdo.ru/</p>
+                                </div>
+                                <span class="float-right display-5 opacity-5"><i class="fa fa-heart"></i></span>
+                            </div>
+                        </div>
+                    </div></a></article>
+                </div>
+
+            
+                <div class="row">
+                       <div class="col-lg-3 col-md-6">
+                            <div class="card card-widget">
+                                <div class="card-body">
+                                    <h5 class="text-muted">Популярные поисковые запросы </h5>
+									<!-- link -->
+                                    <p></p><div class="media border-bottom-1 p-t-15"><p></p>
+                                        <img class="mr-3 rounded-circle" src="images/avatar/1.jpg" alt="">
+                                        <div class="media-body">
+                                            <div class="row">
+                                                <div class="col-lg-12"><h5> Департамент образования и молодежной политики ХМАО-Югры</h6><p>https://depobr-molod.admhmao.ru/</p></div>
+                                            </div>
+                                        </div>
+                                    </div>
+									<!-- link -->
+                                    <p></p><div class="media border-bottom-1 p-t-15"><br/>
+                                        <img class="mr-3 rounded-circle" src="images/avatar/1.jpg" alt="">
+                                        <div class="media-body">
+                                            <div class="row">
+                                                <div class="col-lg-12"><h5>Институт развития образования ХМАО-Югры</h5><p>https://iro86.ru/</p></div>
+                                            </div>
+                                        </div>
+                                    </div>
+									<!-- link -->
+                                    <p></p><div class="media border-bottom-1 p-t-15">
+                                        <img class="mr-3 rounded-circle" src="images/avatar/1.jpg" alt="">
+                                        <div class="media-body">
+                                            <div class="row">
+                                                <div class="col-lg-12"><h5>Дума ХМАО-Югры</h5><p>https://www.dumahmao.ru/</p></div>
+                                            </div>
+                                        </div>
+                                    </div>
+									<!-- link -->
+                                    <p></p><div class="media border-bottom-1 p-t-15"><br/>
+                                        <img class="mr-3 rounded-circle" src="images/avatar/1.jpg" alt="">
+                                        <div class="media-body">
+                                            <div class="row">
+                                                <div class="col-lg-12"><h5>Администрация Сургутского района</h5><p>http://admsr.ru/</p></div>
+                                            </div>
+                                        </div>
+                                    </div>
+									<!-- link -->
+                                    <p></p><div class="media border-bottom-1 p-t-15">
+                                        <img class="mr-3 rounded-circle" src="images/avatar/1.jpg" alt="">
+                                        <div class="media-body">
+                                            <div class="row">
+                                                <div class="col-lg-12"><h5>Администрация с.п. Солнечный</h5><p>http://sp-sun.ru/</p></div>
+                                            </div>
+                                        </div>
+                                    </div>
+									<!-- link -->
+                                </div>
+                            </div>
+                            
+                        </div>
+						
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card card-widget">
+                                <div class="card-body">
+                                    <h5 class="text-muted">Популярные запросы на Госуслугах </h5>
+									<!-- link -->
+                                    <p></p><div class="media border-bottom-1 p-t-15"><br/>
+                                        <img class="mr-3 rounded-circle" src="images/avatar/1.jpg" alt="">
+                                        <div class="media-body">
+                                            <div class="row">
+                                                <div class="col-lg-12"><h5>Справка об отсутствии судимости</h5><p></p></div>
+                                            </div>
+                                        </div>
+                                    </div>
+									<!-- link -->
+                                    <p></p><div class="media border-bottom-1 p-t-15">
+                                        <img class="mr-3 rounded-circle" src="images/avatar/1.jpg" alt="">
+                                        <div class="media-body">
+                                            <div class="row">
+                                                <div class="col-lg-12"><h5>Замена паспорта РФ в связи с достижением возраста 20 или 45 лет</h5><p></p></div>
+                                            </div>
+                                        </div>
+                                    </div>
+									<!-- link -->
+                                    <p></p><div class="media border-bottom-1 p-t-15"><br/>
+                                        <img class="mr-3 rounded-circle" src="images/avatar/1.jpg" alt="">
+                                        <div class="media-body">
+                                            <div class="row">
+                                                <div class="col-lg-12"><h5>Компенсация педагогическим работникам за оплату коммунальных услуг</h5><p></p></div>
+                                            </div>
+                                        </div>
+                                    </div>
+									<!-- link -->
+                                    <p></p><div class="media border-bottom-1 p-t-15"><br/>
+                                        <img class="mr-3 rounded-circle" src="images/avatar/1.jpg" alt="">
+                                        <div class="media-body">
+                                            <div class="row">
+                                                <div class="col-lg-12"><h5>Реквизиты для перечисления социальных выплат</h5><p></p></div>
+                                            </div>
+                                        </div>
+                                    </div>
+									<!-- link -->
+                                    <p></p><div class="media border-bottom-1 p-t-15">
+                                        <img class="mr-3 rounded-circle" src="images/avatar/1.jpg" alt="">
+                                        <div class="media-body">
+                                            <div class="row">
+                                                <div class="col-lg-12"><h5>Назначение страховых пенсий, накопительной пенсии по государственному обеспечению</h5><p></p></div>
+                                            </div>
+                                        </div>
+                                    </div>
+									<!-- link -->
+                                    <p></p><div class="media border-bottom-1 p-t-15">
+                                        <img class="mr-3 rounded-circle" src="images/avatar/1.jpg" alt="">
+                                        <div class="media-body">
+                                            <div class="row">
+                                                <div class="col-lg-12"><h5>Предоставление сведений из ЕГРЮЛ/ЕГРИП</h5><p></p></div>
+                                            </div>
+                                        </div>
+                                    </div>
+									<!-- link -->
+                                </div>
+                            </div>
+                            
+                        </div>
+                       <div class="col-lg-3 col-md-6">
+                            <div class="card card-widget">
+                                <div class="card-body">
+                                    <h5 class="text-muted">Онлайн радио </h5>
+							<!-- Radio -->
+							<div id="radiobells_container"></div>
+							<link href="https://www.radiobells.com/script/style.css" type="text/css" rel="stylesheet" />
+							<script type="text/javascript">var rad_backcolor="#FFFFFF"; var rad_logo = ""; var rad_autoplay = true; var rad_width = "fixed"; var rad_width = "fixed";var rad_stations =[['https://retro.hostingradio.ru:8043/retro256.mp3','Ретро ФМ','retrofmrus'],['https://dfm.hostingradio.ru/dfm96.aacp','DFM','dfm'],['https://pub0301.101.ru:8443/stream/air/mp3/256/99','Радио Energy','nrj'],['https://pub0102.101.ru:8443/stream/air/aac/64/100','Авторадио','avtoradio'],['https://rusradio.hostingradio.ru/rusradio96.aacp','Русское радио','russradio'],['https://hitfm.hostingradio.ru/hitfm96.aacp','Хит FM','hitfm'],['https://icecast227.ptspb.ru:8443/monte','Монте-Карло Санкт-Петербург','montecarlospb'],['https://pub0302.101.ru:8443/stream/air/aac/64/101','Радио Романтика','romantika'],['https://pub0301.101.ru:8443/stream/air/aac/64/219','Like FM','likefm'],['https://listen2.myradio24.com/8795','ChilloutFM','chilloutfm'],['https://stream.zenolive.com/ehv7x3vqz2quv','Cafe Del Mar Radio','cafedelmarradio'],['https://radio-connect.dline-media.com/powerfm','POWER FM','powerfmru'],['https://nashe1.hostingradio.ru:80/ultra-192.mp3','Радио ULTRA','ultra'],['https://maximum.hostingradio.ru/maximum96.aacp','Радио Максимум','maximum'],['https://pub0102.101.ru:8443/stream/air/aac/64/200','Relax FM','relax'],['https://radio.urg.ua/radio-stilnoe','Перец ФМ','perecfm'],['https://icecast-newradio.cdnvideo.ru/newradio3','Новое радио','newradio'],['https://cafe.amgradio.ru/Cafe','Radio Cafe','makradiocafe'],['https://radiosolo.ru/radio/vanya/icecast.audio','Радио Ваня','vanya'],['https://listen7.myradio24.com/alexx333','Ностальжи Россия','nostalgie'],['https://chanson.hostingradio.ru:8041/chanson-romantic256.mp3','Радио Шансон: Романтический','chansonromantic'],['https://pub0302.101.ru:8443/stream/air/aac/64/102','Юмор FM','umor'],['https://listen1.myradio24.com/6262','Спокойное радио','spokoinoe'],['https://nashe1.hostingradio.ru/nashe-256','Наше радио','nashe'],['https://rfe04.akacast.akamaistream.net/7/509/437762/v1/ibb.akacast.akamaistream.net/rfe04','Радио свобода','radiosvoboda'],['https://msk47-echomsksni.cdnvideo.ru/stream3_128','Эхо Москвы','echo']];</script>
+							<script type="text/javascript" src="http://sshiovz.ru/storage/app/media/SEV2/assets/js/radio.js" charset="UTF-8"></script>
+							<!-- Radio --> 
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                       <div class="col-lg-3 col-md-6">
+                            <div class="card card-widget">
+                                <div class="card-body">
+                                    <h5 class="text-muted">Погода в с.п.Солнечный </h5>
+							<!-- Weather widget by https://www.meteoservice.ru -->
+							<a id="ms-informer-link-8b538f8c9bbf09942ed4bb47ad685f68" class="ms-informer-link" href="https://www.meteoservice.ru/weather/overview/solnechnyiy-khm-ru">Погода в Солнечном</a>
+							<script class="ms-informer-script" src="https://www.meteoservice.ru/informer/script/8b538f8c9bbf09942ed4bb47ad685f68"></script>
+							<!-- End -->
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+
+
+               <div class="row">
+                       <div class="col-lg-3 col-md-6">
+                            <div class="card card-widget">
+                                <div class="card-body">
+                                    <h5 class="text-muted">Анекдот дня </h5>
+							<script src="https://www.anekdot.ru/rss/randomu.html" charset="utf-8"></script>			  
+							<script>var anekdot_count=1;</script>
+							<style type="text/css">
+							#a_rnd_title a {color:#eb7400; border-bottom: 1px dotted #eb7400; text-decoration:none; font-weight: bold}
+							.wrapper {max-width:561px; margin:0 auto;}
+							</style>
+							<!-- End -->
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                       <div class="col-lg-3 col-md-6">
+                            <div class="card card-widget">
+                                <div class="card-body">
+                                    <h5 class="text-muted">Курсы волют </h5>
+							<center><iframe src="https://www.exdex.ru/surgut/ya_widget_freeset/?inc_cbrf=0&hlg=1&css=1th&notitle=1" frameborder="0"width="300" height="75" style="overflow:hidden;"></iframe></center>
+							<!-- End -->
+                                </div>
+                            </div>
+                            
+                        </div>
+						
+                </div>
+
+
+
+
+
+
+         
+
+            </div>
+            <!-- #/ container -->
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+        
+        
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+            <div class="copyright">
+                <p>Дизайн и разработка: <a href="">Савидов В.В.</a> 2023</p>
+            </div>
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <script src="plugins/common/common.min.js"></script>
+    <script src="js/custom.min.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/gleek.js"></script>
+    <script src="js/styleSwitcher.js"></script>
+
+    <!-- Chartjs -->
+    <script src="./plugins/chart.js/Chart.bundle.min.js"></script>
+    <!-- Circle progress -->
+    <script src="./plugins/circle-progress/circle-progress.min.js"></script>
+    <!-- Datamap -->
+    <script src="./plugins/d3v3/index.js"></script>
+    <script src="./plugins/topojson/topojson.min.js"></script>
+    <script src="./plugins/datamaps/datamaps.world.min.js"></script>
+    <!-- Morrisjs -->
+    <script src="./plugins/raphael/raphael.min.js"></script>
+    <script src="./plugins/morris/morris.min.js"></script>
+    <!-- Pignose Calender -->
+    <script src="./plugins/moment/moment.min.js"></script>
+    <script src="./plugins/pg-calendar/js/pignose.calendar.min.js"></script>
+    <!-- ChartistJS -->
+    <script src="./plugins/chartist/js/chartist.min.js"></script>
+    <script src="./plugins/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
+
+
+
+    <script src="./js/dashboard/dashboard-1.js"></script>
+
+</body>
+
+</html>
